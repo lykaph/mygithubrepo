@@ -1,0 +1,9 @@
+---
+- name: test
+  hosts: all
+  tasks:
+  - name: print a message
+    debug: msg="this is my first task to print some message"
+
+  - name: excute a system command
+    shell: "ifconfig"
